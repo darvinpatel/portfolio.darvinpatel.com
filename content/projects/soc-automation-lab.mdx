@@ -1,0 +1,16 @@
+---
+title: SOC Automation Lab
+description: A complete SOC automation home lab with fully functional SIEM+SOAR using Wazuh, The Hive and Shuffler
+date: "2024-01-17"
+repository: darvinpatel/soc-automation-lab
+published: true
+  
+---
+[![](https://raw.githubusercontent.com/darvinpatel/soc-automation-lab/main/images/lab.drawio.png)](https://github.com/darvinpatel/soc-automation-lab)
+
+## Overview
+
+- Installed Sysmon on windows VM hosted using Azure Virtual Machines
+- Wazuh and The Hive were configured on different vm's to handle logs and alerts respectively
+- VirusTotal was deployed to detect Mimikatz activity 
+- Shuffler acted as SOAR which was configured to alert the SOC analyst via email of any malicious activity like mimikatz in this project
