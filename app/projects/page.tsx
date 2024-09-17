@@ -20,9 +20,9 @@ export default async function ProjectsPage() {
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allProjects.find((project) => project.slug === "sentinel-map")!;
+  const featured = allProjects.find((project) => project.slug === "aws-cloud-resume-challenge")!;
   const top2 = allProjects.find((project) => project.slug === "nessus-vulnerability-management")!;
-  const top3 = allProjects.find((project) => project.slug === "soc-automation-lab")!;
+  const top3 = allProjects.find((project) => project.slug === "sentinel-map")!;
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(
